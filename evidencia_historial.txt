@@ -1,0 +1,130 @@
+EVIDENCIA DE CONTROL DE VERSIONES (Git) - ClimaRD
+Generado con: git log --stat
+==================================================
+
+commit 288eb7d62d2e24c5fc88d9e1780386c3b10857f4
+Author: Jordany Enmanuel Sosa Medina <procabisrl.asist@gmail.com>
+Date:   2026-10-29 22:06:06 -0400
+
+    Agregar evidencia_historial.txt
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01X93Vs34JfzQP9aduFF1yZY
+
+ evidencia_historial.txt | 118 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 118 insertions(+)
+
+commit b69a6dbee86792e34d8390efec46c699024343b6
+Author: Jordany Enmanuel Sosa Medina <procabisrl.asist@gmail.com>
+Date:   2026-10-29 22:06:05 -0400
+
+    Agregar README, capturas de pantalla y flujo de despliegue en GitHub Pages
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01X93Vs34JfzQP9aduFF1yZY
+
+ .github/workflows/deploy.yml                |  40 +++++++++
+ README.md                                   | 128 ++++++++++++++++++++++++++++
+ capturas/00-vista-completa.png              | Bin 0 -> 752827 bytes
+ capturas/01-vista-principal-claro.png       | Bin 0 -> 298794 bytes
+ capturas/02-vista-principal-oscuro.png      | Bin 0 -> 304316 bytes
+ capturas/03-simulacion-alerta-ciclonica.png | Bin 0 -> 372795 bytes
+ capturas/04-mochila-de-emergencia.png       | Bin 0 -> 94044 bytes
+ capturas/05-version-movil.png               | Bin 0 -> 358770 bytes
+ src/App.css                                 |   5 +-
+ src/services/weather.js                     |   4 +-
+ 10 files changed, 175 insertions(+), 2 deletions(-)
+
+commit ff01bf9b0ace2f1582a04a445fa6359357ca73d4
+Author: Jordany Enmanuel Sosa Medina <procabisrl.asist@gmail.com>
+Date:   2026-10-29 22:04:25 -0400
+
+    Estilos con modo claro/oscuro, animaciones y diseno adaptable
+    
+    Se limpian los estilos de plantilla de Vite, se agrega favicon propio,
+    idioma es y configuracion de ruta relativa para despliegue.
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01X93Vs34JfzQP9aduFF1yZY
+
+ index.html         |  18 ++-
+ package.json       |   3 +-
+ public/favicon.svg |  12 +-
+ src/App.css        | 458 +++++++++++++++++++++++++++++++++++++++++++++--------
+ src/index.css      | 146 +++++++----------
+ vite.config.js     |   2 +
+ 6 files changed, 476 insertions(+), 163 deletions(-)
+
+commit e494f31445ce5ab2e4ba12de6fc5d94443836d00
+Author: Jordany Enmanuel Sosa Medina <procabisrl.asist@gmail.com>
+Date:   2026-10-29 22:03:46 -0400
+
+    Reorganizar la interfaz en componentes React
+    
+    Se agregan resumen nacional, banner de alertas, busqueda, orden, modo
+    oscuro/claro, lista interactiva de la mochila de emergencia y leyenda.
+    Se corrige class por className.
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01X93Vs34JfzQP9aduFF1yZY
+
+ src/App.jsx                          | 302 ++++++++++++-----------------------
+ src/components/AlertBanner.jsx       |  22 +++
+ src/components/AlertLegend.jsx       |  25 +++
+ src/components/Controls.jsx          |  59 +++++++
+ src/components/Footer.jsx            |  13 ++
+ src/components/Header.jsx            |  27 ++++
+ src/components/PreventionSection.jsx | 100 ++++++++++++
+ src/components/ProvinceCard.jsx      |  37 +++++
+ src/components/SummaryBar.jsx        |  27 ++++
+ 9 files changed, 410 insertions(+), 202 deletions(-)
+
+commit 02b2e6af3ae2a043cb850c3c2a84c5e26b8e86ad
+Author: Jordany Enmanuel Sosa Medina <procabisrl.asist@gmail.com>
+Date:   2026-10-29 22:03:14 -0400
+
+    Separar datos, utilidades y servicio del clima; usar Open-Meteo en tiempo real
+    
+    Se reemplaza la API key vacia de OpenWeatherMap por Open-Meteo (sin clave),
+    se agregan rafagas y lluvia al calculo de alertas y fallback a datos simulados.
+    Se amplian las provincias a 12 y se corrige el filtro de regiones.
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01X93Vs34JfzQP9aduFF1yZY
+
+ public/icons.svg             |  24 -----------
+ src/assets/hero.png          | Bin 13057 -> 0 bytes
+ src/assets/react.svg         |   1 -
+ src/assets/vite.svg          |   1 -
+ src/data/provinces.js        |  32 +++++++++++++++
+ src/hooks/useLocalStorage.js |  23 +++++++++++
+ src/hooks/useWeather.js      |  38 +++++++++++++++++
+ src/services/weather.js      |  96 +++++++++++++++++++++++++++++++++++++++++++
+ src/utils/alerts.js          |  46 +++++++++++++++++++++
+ 9 files changed, 235 insertions(+), 26 deletions(-)
+
+commit 78acf901f3ce16ef0999aeeaeb731714467d2a14
+Author: Jordany Enmanuel Sosa Medina <procabisrl.asist@gmail.com>
+Date:   2026-10-29 22:02:46 -0400
+
+    Proyecto base ClimaRD: tarjetas por provincia, alertas y seccion de prevencion
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01X93Vs34JfzQP9aduFF1yZY
+
+ .gitignore           |   24 +
+ eslint.config.js     |   21 +
+ index.html           |   13 +
+ package-lock.json    | 2521 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ package.json         |   30 +
+ public/favicon.svg   |    1 +
+ public/icons.svg     |   24 +
+ src/App.css          |  211 +++++
+ src/App.jsx          |  221 +++++
+ src/assets/hero.png  |  Bin 0 -> 13057 bytes
+ src/assets/react.svg |    1 +
+ src/assets/vite.svg  |    1 +
+ src/index.css        |  111 +++
+ src/main.jsx         |   10 +
+ vite.config.js       |   11 +
+ 15 files changed, 3200 insertions(+)
