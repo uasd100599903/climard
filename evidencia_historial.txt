@@ -2,7 +2,23 @@ EVIDENCIA DE CONTROL DE VERSIONES (Git) - ClimaRD
 Generado con: git log --stat
 ==================================================
 
-commit a24eeb3104ade687037726df322543e492d948bb
+commit 4bbd6feae7208f5e746f08e174388ef24ab7ca0e
+Author: Jordany Enmanuel Sosa Medina <procabisrl.asist@gmail.com>
+Date:   2026-10-29 22:15:56 -0400
+
+    Reemplazar version compilada por ClimaRD.html de un solo archivo
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01X93Vs34JfzQP9aduFF1yZY
+
+ version-compilada/main.js => ClimaRD.html | 28 +++++++++++++++++++++++++++-
+ README.md                                 |  4 ++--
+ version-compilada/favicon.svg             | 11 -----------
+ version-compilada/index.html              | 25 -------------------------
+ version-compilada/main.css                |  1 -
+ 5 files changed, 29 insertions(+), 40 deletions(-)
+
+commit 58b1b9b2b52f6b6f0ea2fd646b01329bc941bfe2
 Author: Jordany Enmanuel Sosa Medina <procabisrl.asist@gmail.com>
 Date:   2026-10-29 22:09:49 -0400
 
@@ -12,11 +28,12 @@ Date:   2026-10-29 22:09:49 -0400
     Claude-Session: https://claude.ai/code/session_01X93Vs34JfzQP9aduFF1yZY
 
  README.md                     |  4 +++
+ evidencia_historial.txt       | 22 +++++++++++++--
  version-compilada/favicon.svg | 11 ++++++++
  version-compilada/index.html  | 25 ++++++++++++++++
  version-compilada/main.css    |  1 +
  version-compilada/main.js     | 66 +++++++++++++++++++++++++++++++++++++++++++
- 5 files changed, 107 insertions(+)
+ 6 files changed, 126 insertions(+), 3 deletions(-)
 
 commit e58ed6785a7137ae69da497e40e2abd2f460eb6d
 Author: Jordany Enmanuel Sosa Medina <procabisrl.asist@gmail.com>

@@ -86,7 +86,7 @@ climard/
 │   ├── utils/alerts.js      # reglas del semáforo de alertas
 │   ├── App.jsx · App.css · index.css · main.jsx
 ├── capturas/                # capturas de pantalla
-├── version-compilada/       # versión ya compilada, se abre con doble clic
+├── ClimaRD.html             # versión compilada en un solo archivo, se abre con doble clic
 ├── evidencia_historial.txt  # historial de Git
 └── package.json
 ```
@@ -106,7 +106,7 @@ npm run lint       # revisa el código con ESLint
 No se necesita ninguna clave: Open-Meteo es de uso gratuito.
 
 > ⚠️ `index.html` de la raíz **no se abre con doble clic**: es el punto de entrada de Vite y requiere `npm run dev`.
-> Para ver la app sin instalar nada, abre `version-compilada/index.html` en el navegador (con conexión a internet para el clima real).
+> Para ver la app sin instalar nada ni usar extensiones, abre `ClimaRD.html` con doble clic (con conexión a internet para el clima real).
 
 ## 🎓 Qué aprendimos
 
