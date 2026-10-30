@@ -11,7 +11,7 @@
 
 | Integrante |
 | --- |
-| Jordany Enmanuel Sosa Medina|
+| Jordany Sosa |
 | Jorge DE Castro|
 | Cristopher Helena|
 | DEURYS YOSEF|
