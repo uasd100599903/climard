@@ -1,7 +1,8 @@
 {
   "name": "climard",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "ClimaRD: clima en tiempo real y alertas ciclónicas para provincias de la República Dominicana",
   "type": "module",
   "scripts": {
     "dev": "vite",
