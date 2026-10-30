@@ -11,8 +11,11 @@
 
 | Integrante |
 | --- |
-| Jordany Enmanuel Sosa Medina |
-
+| Jordany Enmanuel Sosa Medina|
+| Jorge DE Castro|
+| Cristopher Helena|
+| Deurys
+|
 ## 📖 Descripción del proyecto
 
 La temporada de huracanes preocupa a las comunidades costeras de la República Dominicana.
