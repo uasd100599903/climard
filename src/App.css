@@ -213,7 +213,7 @@
 /* ---------- Resumen ---------- */
 .summary-bar {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
@@ -531,6 +531,9 @@
 /* ---------- Móvil ---------- */
 @media (max-width: 640px) {
   .app-title { font-size: 1.5rem; }
+  .summary-bar { grid-template-columns: 1fr 1fr; gap: 0.7rem; }
+  .summary-tile { padding: 0.7rem 0.8rem; }
+  .summary-value { font-size: 1.4rem; }
   .controls-bar { padding: 1rem; }
   .controls-group, .field, .search-select, .toggle-mode { width: 100%; }
   .prevention-section { padding: 1.2rem; }

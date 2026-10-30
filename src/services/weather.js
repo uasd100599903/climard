@@ -57,7 +57,9 @@ export function buildSimulatedWeather({ storm = false } = {}) {
       ? randomBetween(province.coastal ? 55 : 38, province.coastal ? 105 : 70)
       : randomBetween(8, 28);
     const gust = Math.round(wind * (1.3 + Math.random() * 0.3));
-    const rain = storm ? randomBetween(6, 32) : randomBetween(0, 1);
+    const rain = storm
+      ? randomBetween(province.coastal ? 10 : 3, province.coastal ? 32 : 12)
+      : randomBetween(0, 1);
     const { description, icon } = storm
       ? { description: 'Lluvias intensas con ráfagas', icon: '⛈️' }
       : describeWeatherCode(randomBetween(1, 2));
